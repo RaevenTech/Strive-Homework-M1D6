@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <h1 id="header"> Spy Shop</h1> //EX1: Add an h1 tag with the name of your shop
-    <table id="product-table"> //EX2: Add a TABLE with the top 5 products of your shop
-        <tr id="product-image"> //EX3: Insert for each product an image, a title, a description and a price
+    <h1 id="header"> Spy Shop </h1>
+    <table id="product-table">
+        <tr id="product-image">
             <th><img class="image" src="https://m.media-amazon.com/images/I/51TfFUOCL7S._AC_UY218_.jpg"
                     alt="camera clock"></th>
             <th><img class="image" src="https://m.media-amazon.com/images/I/51vnNBSMzcL._AC_UY218_.jpg"
@@ -25,49 +25,69 @@
                     alt="Clothes Hook Camera">
             </th>
         </tr>
-        <tr id="product-title"> //EX3: Insert for each product an image, a title, a description and a price
+        <tr id="product-title">
             <td class="product">Spy alarm clock</td>
             <td class="product">Spy pen</td>
             <td class="product"> Spy Power Bank</td>
             <td class="product">Spy camera</td>
             <td class="product">Clothes hook camera</td>
         </tr>
-        <tr id="image-description"> //EX3: Insert for each product an image, a title, a description and a price
+        <tr id="image-description">
             <td class="description">Hidden Camera - Alarm Clock</td>
             <td class="description">Spy Hidden Pen Camera</td>
             <td class="description">Power Bank Camera</td>
             <td class="description">Smallest Spy Camera</td>
             <td class="description">Spy clothes Hook</td>
         </tr>
-        <tr id="product-price"> //EX3: Insert for each product an image, a title, a description and a price
+        <tr id="product-price">
             <td class="price">$49.99</td>
             <td class="price">$24.99</td>
             <td class="price">$29.99</td>
             <td class="price">$46.99</td>
             <td class="price">$32.99</td>
         </tr>
-        <tr id="web-link-button"> //EX4: Add links to existing Amazon products for each item in the table
-            <td><button class="button">Select</button></td>
-            <td><button class="button">Select</button></td>
-            <td><button class="button">Select</button></td>
-            <td><button class="button">Select</button></td>
-            <td><button class="button">Select</button></td>
+        <tr id="web-link-button">
+            <td><a href="https://www.amazon.de/spycam/s?k=spycam"><button class="button">Select</button></a></td>
+            <td><a href="https://www.amazon.de/spycam/s?k=spycam"><button class="button">Select</button></a></td>
+            <td><a
+                    href="https://www.amazon.de/-/en/Kamrea-10000mAh-Camera-Hidden-Security/dp/B092M47PJR/ref=sr_1_12?keywords=spycam&qid=1646729579&sr=8-12"><button
+                        class="button">Select</button></a></td>
+            <td><a href="https://www.amazon.de/spycam/s?k=spycam"><button class="button">Select</button></a></td>
+            <td><a href="https://www.amazon.de/spycam/s?k=spycam"><button class="button">Select</button></a></td>
         </tr>
 
     </table>
-    <label id="textarea" class="textarea-label"> Message Board </label>EX6: Add a message board where the user can type
-    a message in it (no real posting/saving features required!)
+    <label id="textarea" class="textarea-label"> Message Board </label>
+
     <br>
     <textarea id="textarea" class="teaxtarea-block" name="comments" row="70" cols="175"></textarea>
 
+    <footer id="footer" class="footer-text">
+        <div class="footer-shop-name"> Spy Shop</div>
+        <div class=" shop-address">Shop address: Secret location</div>
+    </footer>
 
+    <script>
+
+        const changePageHeader = function () {
+            document.querySelector("h1").innerText = "Spy vs Spy"
+
+        }
+        //EX8: Write a function to change the page background color
+        const changeBackgroundColor = function () {
+            document.querySelector("body").style.backgroundColor = "#2596be"
+
+
+        }
+        //EX9: Write a function to change the footer address with a fake one
+        const changeFooterAdress = function = (){
+            document.querySelector(".shop-address").innerText = " Fake Adress"
+        }
+
+
+
+    </script>
 </body>
-<footer id="footer" class="footer-text"> Shop address: Secret location</footer> //EX5: Add a footer with the address and
-the name of your shop
+
 
 </html>
-// EX: 7 to 12, should be written in JavaScript:
-
-
-
-//EX7: Write a function to change the h1 text to something else
