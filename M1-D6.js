@@ -25,7 +25,7 @@ let sum = 10 + 20
     Create a variable called random and assign to it a random number between 0 and 20 (it should be randomly created at each execution).
 */
 var random = Math.floor(Math.random() * 20);
-console.log(random)
+
 /* EXERCISE D
     Create a variable called me and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
 */
@@ -34,25 +34,25 @@ const me = {
     surname: "Goncalves",
     age: 40,
 }
-console.log(me)
+
 /* EXERCISE E
     Write a piece of code for programmatically removing the age property from the previously create object.
 */
 
 delete me.age;
-console.log(me)
+
 /* EXERCISE F
    Write a piece of code for programmatically adding to the me object you defined before an array called skills, containing the programming languages you know right now.
 */
 me.skills = "HTML", "CSS", "javaScript";
-console.log(me)
+
 
 
 /* EXERCISE G
    Write a piece of code for programmatically removing the last skill from the skills array inside the me object.
 */
 // delete me.skills[(0, 2)]
-console.log(me)
+
 // JS Functions
 /* EXERCISE 1
     Write a function called dice; it should randomize an integer number between 1 and 6.
@@ -60,10 +60,21 @@ console.log(me)
 function dice(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
-console.log(dice(1, 6))
+//console.log(dice(1, 6))
+
 /* EXERCISE 2
     Write a function called whoIsBigger which receives 2 numbers as parameters and returns the biggest one.
 */
+function whoIsBigger(num1, num2) {
+    if (num1 > num2) {
+        return num1
+    } else if (num1 === num2) {
+        return "equal"
+    } else {
+        return num2
+    }
+}
+console.log(whoIsBigger(9, 12))
 
 /* EXERCISE 3
     Write a function called splitMe which receives a string as a parameter and returns an array with every word in that string.
