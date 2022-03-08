@@ -9,38 +9,44 @@
 </head>
 
 <body>
-    <h1> Spy vs Spy</h1>
-    <table>
-        <tr id="img-table">
-            <th><img src="https://m.media-amazon.com/images/I/51TfFUOCL7S._AC_UY218_.jpg" alt="camera clock"></th>
-            <th><img src=https://m.media-amazon.com/images/I/51vnNBSMzcL._AC_UY218_.jpg alt=" Pen with spy camera"></th>
-            <th><img src="https://m.media-amazon.com/images/I/51wLHlJWYSL._AC_UY218_.jpg" alt="Power bank camera"></th>
-            <th><img src="https://m.media-amazon.com/images/I/517UTElTqzL._AC_UY218_.jpg" alt="Tiny Spy camera"></th>
-            <th><img src="https://m.media-amazon.com/images/I/51v3brh64DL._AC_UY218_.jpg" alt="Clothes Hook Camera">
+    <h1 id="header"> Spy Shop</h1> //EX1: Add an h1 tag with the name of your shop
+    <table id="product-table"> //EX2: Add a TABLE with the top 5 products of your shop
+        <tr id="product-image"> //EX3: Insert for each product an image, a title, a description and a price
+            <th><img class="image" src="https://m.media-amazon.com/images/I/51TfFUOCL7S._AC_UY218_.jpg"
+                    alt="camera clock"></th>
+            <th><img class="image" src="https://m.media-amazon.com/images/I/51vnNBSMzcL._AC_UY218_.jpg"
+                    alt=" Pen with spy camera">
+            </th>
+            <th><img class="image" src="https://m.media-amazon.com/images/I/51wLHlJWYSL._AC_UY218_.jpg"
+                    alt="Power bank camera"></th>
+            <th><img class="image" src="https://m.media-amazon.com/images/I/517UTElTqzL._AC_UY218_.jpg"
+                    alt="Tiny Spy camera"></th>
+            <th><img class="image" src="https://m.media-amazon.com/images/I/51v3brh64DL._AC_UY218_.jpg"
+                    alt="Clothes Hook Camera">
             </th>
         </tr>
-        <tr id="table-title">
-            <td>Spy alarm clock</td>
-            <td>Spy pen</td>
-            <td>Spy Power Bank</td>
-            <td>Spy camera</td>
-            <td>Clothes hook camera</td>
+        <tr id="product-title"> //EX3: Insert for each product an image, a title, a description and a price
+            <td class="product">Spy alarm clock</td>
+            <td class="product">Spy pen</td>
+            <td class="product"> Spy Power Bank</td>
+            <td class="product">Spy camera</td>
+            <td class="product">Clothes hook camera</td>
         </tr>
-        <tr id="image-description">
-            <td>Hidden Camera - Alarm Clock </td>
-            <td>Spy Hidden Pen Camera</td>
-            <td>Power Bank Camera</td>
-            <td>Smallest Spy Camera</td>
-            <td>Spy clothes Hook</td>
+        <tr id="image-description"> //EX3: Insert for each product an image, a title, a description and a price
+            <td class="description">Hidden Camera - Alarm Clock</td>
+            <td class="description">Spy Hidden Pen Camera</td>
+            <td class="description">Power Bank Camera</td>
+            <td class="description">Smallest Spy Camera</td>
+            <td class="description">Spy clothes Hook</td>
         </tr>
-        <tr id="price">
-            <td>$49.99</td>
-            <td>$24.99</td>
-            <td>$29.99</td>
-            <td>$46.99</td>
-            <td>$32.99</td>
+        <tr id="product-price"> //EX3: Insert for each product an image, a title, a description and a price
+            <td class="price">$49.99</td>
+            <td class="price">$24.99</td>
+            <td class="price">$29.99</td>
+            <td class="price">$46.99</td>
+            <td class="price">$32.99</td>
         </tr>
-        <tr id="web-link" class="button">
+        <tr id="web-link-button"> //EX4: Add links to existing Amazon products for each item in the table
             <td><button class="button">Select</button></td>
             <td><button class="button">Select</button></td>
             <td><button class="button">Select</button></td>
@@ -49,12 +55,19 @@
         </tr>
 
     </table>
-    <label id="textarea"> Message Board </label>
+    <label id="textarea" class="textarea-label"> Message Board </label>EX6: Add a message board where the user can type
+    a message in it (no real posting/saving features required!)
     <br>
-    <textarea id="textarea" name="comments" row="70" cols="175"></textarea>
+    <textarea id="textarea" class="teaxtarea-block" name="comments" row="70" cols="175"></textarea>
 
 
 </body>
-<footer> Shop address: Secret location</footer>
+<footer id="footer" class="footer-text"> Shop address: Secret location</footer> //EX5: Add a footer with the address and
+the name of your shop
 
 </html>
+// EX: 7 to 12, should be written in JavaScript:
+
+
+
+//EX7: Write a function to change the h1 text to something else
