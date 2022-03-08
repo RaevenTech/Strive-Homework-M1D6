@@ -49,9 +49,7 @@
         <tr id="web-link-button">
             <td><a href="https://www.amazon.de/spycam/s?k=spycam"><button class="button">Select</button></a></td>
             <td><a href="https://www.amazon.de/spycam/s?k=spycam"><button class="button">Select</button></a></td>
-            <td><a
-                    href="https://www.amazon.de/-/en/Kamrea-10000mAh-Camera-Hidden-Security/dp/B092M47PJR/ref=sr_1_12?keywords=spycam&qid=1646729579&sr=8-12"><button
-                        class="button">Select</button></a></td>
+            <td><a href="https://www.amazon.de/spycam/s?k=spycam"><button class="button">Select</button></a></td>
             <td><a href="https://www.amazon.de/spycam/s?k=spycam"><button class="button">Select</button></a></td>
             <td><a href="https://www.amazon.de/spycam/s?k=spycam"><button class="button">Select</button></a></td>
         </tr>
@@ -69,22 +67,32 @@
 
     <script>
 
-        const changePageHeader = function () {
-            document.querySelector("h1").innerText = "Spy vs Spy"
+        function changePageHeader() {
+            document.querySelector("h1").innerText = "SPY vs SPY"
 
         }
         //EX8: Write a function to change the page background color
-        const changeBackgroundColor = function () {
+        function changeBackgroundColor() {
             document.querySelector("body").style.backgroundColor = "#2596be"
-
-
         }
+        changeBackgroundColor()
         //EX9: Write a function to change the footer address with a fake one
-        const changeFooterAdress = function () {
-            document.querySelector(".shop-address").innerText = " Fake Adress"
+        function changeFooterAdress() {
+            document.querySelector(".shop-address").innerText = "  SPY vs SPY, Fake Adress"
         }
-
-
+        changeFooterAdress()
+        //EX10: Write a function to add a CSS class to every Amazon link
+        function addClassToAmazonLinks() {
+            let amazonlinks = document.querySelectorAll("a");
+            for (let i = 0; i < amazonlinks.length; i++) {
+                amazonlinks[i].href = "www.amazon.com"
+                amazonlinks[i].classList.add("new-limk")
+            }
+        }
+        addClassToAmazonLinks();
+        //END: EX11: Write a function to toggle a CSS class for all the images in the table; that class should set the visibility of the image
+        f
+        //EX12: Write a function to color the price of the products in a different one every time it's invoked
 
     </script>
 </body>
