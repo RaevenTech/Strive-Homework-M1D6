@@ -80,12 +80,19 @@ console.log(whoIsBigger(9, 12))
     Write a function called splitMe which receives a string as a parameter and returns an array with every word in that string.
     Ex.: splitMe("I love coding") => returns ["I", "Love", "Coding"]
 */
+function splitMe() {
+    let str = "I love coding";
+    let arr = str.split(" ");
+}
 
+console.log(arr)
 /* EXERCISE 4
     Write a function called deleteOne which receives a string and a boolean as parameters.
     If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 */
-
+const deleteOne = (str, boolean) => boolean ? str.substring(1) : str.substring(0, str.length - 1)
+console.log(deleteOne("Raeven", true))
+console.log(deleteOne("Raeven", false))
 /* EXERCISE 5
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
@@ -98,7 +105,28 @@ console.log(whoIsBigger(9, 12))
 /* EXERCISE 7
    Write a function called whatDayIsIt that should return the current day of the week.
 */
-
+function whatDayIsIt() {
+    let date = new Date().getDay();
+    switch (date) {
+        case 0: date = "Sunday"
+            break;
+        case 1: date = "Monday"
+            break;
+        case 2: date = "Tuesday"
+            break;
+        case 3: date = "Wednesday"
+            break;
+        case 4: date = "Thrusday"
+            break;
+        case 5: date = "Friday"
+            break;
+        case 6: date = "Saturday"
+            break;
+        default:
+            break;
+    }
+    return date;
+}
 /* EXERCISE 8
     Write a function called rollTheDices which receives a number as a parameter.
     It should invoke the dice() function defined in Ex1 the specified amount of times,
